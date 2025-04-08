@@ -1,2 +1,2 @@
-import HomePage from "@/pages/home";
+import HomePage from "@/views/home";
 export default HomePage;

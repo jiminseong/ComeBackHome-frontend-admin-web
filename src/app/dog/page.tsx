@@ -1,2 +1,2 @@
-import DogPage from "@/pages/dog";
+import DogPage from "@/views/dog";
 export default DogPage;

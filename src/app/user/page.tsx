@@ -1,2 +1,2 @@
-import UserPage from "@/pages/user";
+import UserPage from "@/views/user";
 export default UserPage;
