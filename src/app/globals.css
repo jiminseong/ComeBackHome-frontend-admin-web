@@ -7,6 +7,25 @@
   --font-inter: "Inter", sans-serif;
 }
 
+a {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+input {
+  cursor: pointer;
+}
+select {
+  cursor: pointer;
+}
+textarea {
+  cursor: pointer;
+}
+label {
+  cursor: pointer;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #2a2a2a;
@@ -18,4 +37,25 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-inter);
+}
+
+@theme {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-primary: #c42020;
+  --color-danger: #e10e0e;
+  --color-success: #1a8245;
+  --color-success-light: #daf8e6;
+
+  --color-gray-100: #f8f8f8;
+  --color-gray-200: #eeeeee;
+  --color-gray-300: #dfe4ea;
+  --color-gray-400: #848484;
+  --color-gray-700: #444444;
+
+  --color-dark-bg: #111928;
+  --color-dark-text: #212b36;
+
+  --color-blue: #3758f9;
+  --color-accent: #feeebb;
 }
