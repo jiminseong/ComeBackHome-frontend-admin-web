@@ -1,2 +1,2 @@
-// import AiLogsPage from "@/views/logs-ai";
-// export default AiLogsPage;
+import AiLogsPage from "@/views/logs-ai";
+export default AiLogsPage;
