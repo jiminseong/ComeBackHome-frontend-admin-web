@@ -7,10 +7,26 @@ import { useRouter } from "next/navigation";
 const HomePage = () => {
   const router = useRouter();
 
+  const loginWithGoogle = () => {
+    try {
+      const googleAuthUrl = `${process.env.NEXT_PUBLIC_SERVER_URL}/oauth2/authorization/google`;
+      window.location.href = googleAuthUrl; // Redirect the user to the Google OAuth URL
+    } catch (error) {
+      console.error("로그인 요청 중 오류 발생:", error);
+      throw error;
+    }
+  };
+
   // 구글 로그인 핸들러
-  const handleGoogleLogin = () => {
-    console.log("Google Login");
-    router.push("/user");
+  const handleGoogleLogin = async () => {
+    try {
+      await loginWithGoogle();
+      // 로그인 성공 시 /dog 페이지로 이동
+      router.push("/dog");
+    } catch (error) {
+      console.error("로그인 중 오류 발생:", error);
+      alert("로그인 중 오류가 발생했습니다.");
+    }
   };
 
   return (

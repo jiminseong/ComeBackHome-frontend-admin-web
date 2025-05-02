@@ -3,6 +3,9 @@ import Header from "@/widgets/header/Header";
 import DogTable from "@/views/dog/ui/DogTable";
 
 const DogPage = () => {
+  //TODO: API에서 강아지 목록을 가져오는 로직 추가
+  //TODO: 로그인 안되어있으면 로그인 페이지로 리다이렉트하는 로직 추가
+
   const dogs = [
     {
       name: "바둑이",

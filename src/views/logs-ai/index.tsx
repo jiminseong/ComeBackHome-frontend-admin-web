@@ -5,6 +5,8 @@ import { useState } from "react";
 import Header from "@/widgets/header/Header";
 
 export const LogAIPage = () => {
+  //TODO: 로그인 안되어있으면 로그인 페이지로 리다이렉트하는 로직 추가
+
   const [logs, setLogs] = useState<string[]>([]);
   const [loading, setLoading] = useState(false);
 
