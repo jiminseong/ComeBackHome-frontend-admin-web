@@ -1,9 +1,7 @@
-import axios from "axios";
-
+// TODO : 로그인 안되면 못하도록
 export const getLogs = async (): Promise<string[]> => {
-  const res = await axios.get("https://cbh.kro.kr/logs", {
-    responseType: "text", // 응답을 string으로 받기 위해 설정
-  });
+  const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/logs`);
+  const text = await res.text();
 
-  return res.data.split("\n").filter(Boolean);
+  return text.split("\n").filter(Boolean);
 };
