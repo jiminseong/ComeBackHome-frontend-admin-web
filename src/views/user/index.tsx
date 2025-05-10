@@ -5,7 +5,6 @@ import UserTable from "@/views/user/ui/UserTable";
 
 const UserPage = () => {
   //TODO: API에서 유저 목록을 가져오는 로직 추가
-  //TODO: 로그인 안되어있으면 로그인 페이지로 리다이렉트하는 로직 추가
 
   const users = [
     { name: "지민성", email: "jiminseong@example.com", status: "활성화", role: "최고관리자" },

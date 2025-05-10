@@ -10,7 +10,7 @@ const HomePage = () => {
   const loginWithGoogle = () => {
     try {
       const googleAuthUrl = `${process.env.NEXT_PUBLIC_SERVER_URL}/oauth2/authorization/google`;
-      window.location.href = googleAuthUrl; // Redirect the user to the Google OAuth URL
+      window.location.href = googleAuthUrl;
     } catch (error) {
       console.error("로그인 요청 중 오류 발생:", error);
       throw error;
